@@ -2,8 +2,8 @@
 
 ### The Best FREE ScriptHub!
 
-**Discord:** https://discord.gg/SK5XnQRchG
-**Youtube:** https://www.youtube.com/@AvelisProject
+- **Discord:** https://discord.gg/SK5XnQRchG
+- **Youtube:** https://www.youtube.com/@AvelisProject
 
 #### Loader:
 ```luau
