@@ -1,0 +1,1 @@
+["Lifting Monster"] = "https://jewomia.pages.dev/Scripts/AvHub/Games/LiftingMonster.lua", ["Hood Shootout"] = "https://jewomia.pages.dev/Scripts/AvHub/Games/HoodShootout.lua", ["Chicken Farm"] = "https://jewomia.pages.dev/Scripts/AvHub/Games/ChickenFarm.lua", ["Prison Life"] = "https://jewomia.pages.dev/Scripts/AvHub/Games/PrisonLife.lua"
