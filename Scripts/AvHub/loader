@@ -1,0 +1,108 @@
+local Vind = loadstring(game:HttpGet("https://raw.githubusercontent.com/Skinny-yz/VVind-UI/refs/heads/main/src.lua"))()
+
+local Window = Vind:CreateWindow({
+    Title = "AvHub - Best Free Scripthub",
+    Subtitle = "AvHub",
+    Icon = "rbxassetid://101597703020874",
+    Size = UDim2.fromOffset(640, 455),
+    MinSize = Vector2.new(500, 360),
+    Draggable = true,
+    Resizable = true,
+    UseBlur = true,
+    DefaultTab = "Home",
+})
+
+local Scripts = Window:AddTab({ Name = "Scripts", Icon = "Lucide:scroll-text" })
+Scripts:AddSection("Games", "Lucide:gamepad")
+
+local liftingmonster = Scripts:AddButton({
+    Text = "Lifting Monster",
+    Description = "Load the Lifting Monster script.",
+    Icon = "Lucide:biceps-flexed",
+    Callback = function()
+      loadstring(game:HttpGet("https://jewomia.pages.dev/Scripts/AvHub/Games/LiftingMonster.lua"))()
+    end,
+})
+
+local hoodshootout = Scripts:AddButton({
+    Text = "Hood Shootout",
+    Description = "Load the Hood Shootout script.",
+    Icon = "Lucide:bow-arrow",
+    Callback = function()
+      loadstring(game:HttpGet("https://jewomia.pages.dev/Scripts/AvHub/Games/HoodShootout.lua"))()
+    end,
+})
+
+local chickenfarm = Scripts:AddButton({
+    Text = "Chicken Farm",
+    Description = "Load the Chicken Farm script.",
+    Icon = "Lucide:egg",
+    Callback = function()
+      loadstring(game:HttpGet("https://jewomia.pages.dev/Scripts/AvHub/Games/ChickenFarm.lua"))()
+    end,
+})
+
+local prisonlife = Scripts:AddButton({
+    Text = "Prison Life",
+    Description = "Load the Prison Life script.",
+    Icon = "Lucide:lock",
+    Callback = function()
+      loadstring(game:HttpGet("https://jewomia.pages.dev/Scripts/AvHub/Games/PrisonLife.lua"))()
+    end,
+})
+
+Scripts:AddSection("Universal", "Lucide:globe")
+
+local moreunc = Scripts:AddButton({
+    Text = "MoreUNC",
+    Description = "Adds extra UNC functions to your executor so more scripts can run properly.",
+    Icon = "Lucide:library",
+    Callback = function()
+      loadstring(game:HttpGet("https://jewomia.pages.dev/Scripts/AvHub/Universal/moreunc.lua"))()
+    end,
+})
+
+local avelisss = Scripts:AddButton({
+    Text = "Avelis SS",
+    Description = "Checks the game for backdoors and finds remotes that may allow server-side code execution.",
+    Icon = "Lucide:plug-zap",
+    Callback = function()
+      loadstring(game:HttpGet("https://jewomia.pages.dev/Scripts/AvHub/Universal/AvelisSS.lua"))()
+    end,
+})
+
+local Socials = Window:AddTab({ Name = "Socials", Icon = "Lucide:share-2" })
+
+local discord = Socials:AddButton({
+    Text = "Discord",
+    Description = "Copy our Discord invite!",
+    Icon = "Lucide:message-circle-more",
+    Callback = function()
+        setclipboard("https://discord.gg/SK5XnQRchG")
+
+        Vind:Notify({
+            Title = "Social",
+            Text = "Our Discord link has been copied to your clipboard!",
+            Type = "success",
+            Duration = 4,
+            Icon = "Lucide:check"
+        })
+    end,
+})
+
+local youtube = Socials:AddButton({
+    Text = "Youtube",
+    Description = "Copy our Youtube Channel link!",
+    Icon = "Lucide:square-play",
+    Callback = function()
+        setclipboard("https://www.youtube.com/@AvelisProject")
+
+        Vind:Notify({
+            Title = "Social",
+            Text = "Our Youtube Channel link has been copied to your clipboard!",
+            Type = "success",
+            Duration = 4,
+            Icon = "Lucide:check"
+        })
+    end,
+})
