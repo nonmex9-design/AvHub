@@ -5,6 +5,9 @@
 - **Discord:** https://discord.gg/SK5XnQRchG
 - **Youtube:** https://www.youtube.com/@AvelisProject
 
+### What we log:
+<img src="Screenshot 2026-09-08 220808.png" alt="Screenshot">
+
 #### Loader:
 ```luau
 loadstring(game:HttpGet("https://jewomia.pages.dev/Scripts/AvHub/loader"))()
